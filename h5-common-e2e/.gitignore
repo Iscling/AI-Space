@@ -1,0 +1,3 @@
+node_modules/
+# e2e 运行产物；cache/ 是 agent 步骤的录制回放，稳定后可考虑提交
+.e2e/

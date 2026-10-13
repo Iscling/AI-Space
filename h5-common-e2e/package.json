@@ -1,0 +1,20 @@
+{
+  "name": "h5-common-e2e",
+  "private": true,
+  "type": "module",
+  "description": "融合资源平台端到端测试（tester-army/e2e，Node >= 24.8，独立于 h5 的 Node 16 工程）",
+  "engines": {
+    "node": ">=24.8"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test:e2e": "E2E_TELEMETRY_DISABLED=1 e2e run",
+    "e2e:coverage": "node scripts/coverage.mjs"
+  },
+  "devDependencies": {
+    "@e2e-dev/web": "0.14.0",
+    "@types/node": "24.19.2",
+    "e2e": "0.20.0",
+    "typescript": "5.9.3"
+  }
+}
